@@ -90,7 +90,7 @@ angular.module('myApp', [
 	mySocket.on('pir', function(json) {
 		//Nhận được thì in ra thôi hihi.
 		console.log("PIR:", json)
-		$scope.pir = (json.digital==1) ? "HAD FOUND PEOPLE" : " NOT FOUND ANYBODY , WOULD YOU LIKE TO SEND SOS!!! "
+		$scope.pir = (json.digital==1) ? "DITECTED !" : " NOTHING !"
 	})
 	mySocket.on('sonar', function(json) {
 		//Nhận được thì in ra thôi hihi.
